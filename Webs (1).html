@@ -1,0 +1,237 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farrel's Portfolio Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black background for the main page */
+            color: #fff; /* White text color */
+        }
+        
+        header {
+            background-color: #FFD700; /* Yellow header */
+            color: #000; /* Black text color in the header */
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        header nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        
+        header nav ul li a {
+            color: #000; /* Black links in the header */
+            text-decoration: none;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        section {
+            margin-bottom: 20px;
+        }
+        
+        /* Introduction section with black background */
+        #introduction {
+            background-color: #333; /* Dark grey background for Introduction */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        #portfolio, #about-info, #contact {
+            background-color: #333; /* Dark grey background for other sections */
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        footer {
+            background-color: #FFD700; /* Yellow footer */
+            color: #000; /* Black text color in the footer */
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('introduction')">Home</a></li>
+                <li><a href="#" onclick="showSection('about-info')">About</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Hi! My name is Farrel, and this is my first website.</p>
+            <p>I created this website to train and learn new skills. It will also serve as a place for me to showcase my skills and portfolio.</p>
+        </section>
+        <section id="portfolio" style="display:none;">
+            <h2>Portfolio</h2>
+            <p>Hi! This is where I'm going to put my skills portfolio!</p>
+            <!-- Add your portfolio content here -->
+        </section>
+        <section id="about-info" style="display:none;">
+            <h2>About</h2>
+            <p>Welcome to the About page! Here, you can find detailed information about me, my background, and my skills. This section is dedicated to giving you an insight into who I am and what I do. You will find comprehensive details about my education, experiences, and any other information that showcases my qualifications and abilities. Feel free to explore and get to know more about me and my journey!</p>
+        </section>
+        <section id="contact" style="display:none;">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch with me, you can reach me via phone at <a href="tel:+6285712614">+62 8571 2614</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p><a href="https://FarrelsPortfolio.com" target="_blank">Farrel's Portfolio.com</a></p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('main > section').forEach(section => {
+                section.style.display = 'none';
+            });
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+        
+        // Default to show the introduction section
+        showSection('introduction');
+    </script>
+</body>
+</html><script><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farrel's Portfolio Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black background for the main page */
+            color: #fff; /* White text color */
+        }
+        
+        header {
+            background-color: #FFD700; /* Yellow header */
+            color: #000; /* Black text color in the header */
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        header nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        
+        header nav ul li a {
+            color: #000; /* Black links in the header */
+            text-decoration: none;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        section {
+            margin-bottom: 20px;
+        }
+        
+        /* Introduction section with black background */
+        #introduction {
+            background-color: #000; /* Black background for Introduction */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        #portfolio, #about-info, #contact {
+            background-color: #333; /* Dark grey background for other sections */
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        footer {
+            background-color: #FFD700; /* Yellow footer */
+            color: #000; /* Black text color in the footer */
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('introduction')">Home</a></li>
+                <li><a href="#" onclick="showSection('about-info')">About</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Hi! My name is Farrel, and this is my first website.</p>
+            <p>I created this website to train and learn new skills. It will also serve as a place for me to showcase my skills and portfolio.</p>
+        </section>
+        <section id="portfolio" style="display:none;">
+            <h2>Portfolio</h2>
+            <p>Hi! This is where I'm going to put my skills portfolio!</p>
+            <!-- Add your portfolio content here -->
+        </section>
+        <section id="about-info" style="display:none;">
+            <h2>About</h2>
+            <p>Welcome to the About page! Here, you can find detailed information about me, my background, and my skills. This section is dedicated to giving you an insight into who I am and what I do. You will find comprehensive details about my education, experiences, and any other information that showcases my qualifications and abilities. Feel free to explore and get to know more about me and my journey!</p>
+        </section>
+        <section id="contact" style="display:none;">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch with me, you can reach me via phone at <a href="tel:+6285712614">+62 8571 2614</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p><a href="https://FarrelsPortfolio.com" target="_blank">Farrel's Portfolio.com</a></p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('main > section').forEach(section => {
+                section.style.display = 'none';
+            });
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+        
+        // Default to show the introduction section
+        showSection('introduction');
+    </script>
+</body>
+</html></script>
